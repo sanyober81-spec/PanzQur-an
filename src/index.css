@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-arabic: 'Amiri', 'Traditional Arabic', serif;
+    --font-latin: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    
+    /* Semantic color tokens dynamically managed by themeGenerator.ts */
+    --color-primary: #126B50;
+    --color-primary-dark: #0c4d39;
+    --color-primary-light: #1c8867;
+    --color-cream: #F5F0D9;
+    --color-cream-soft: #FCFAF2;
+    --color-background: #FAF9F4;
+    --color-surface: #FFFFFF;
+    --color-text-primary: #24352B;
+    --color-text-secondary: #576B60;
+    --color-text-muted: #829489;
+    --color-border: #E5E1D5;
+    --color-gold-accent: #B89B58;
+  }
+
+  body {
+    font-family: var(--font-latin);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Support iOS safe area */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 1rem);
+  }
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  unicode-bidi: isolate;
+}
+
+.font-latin {
+  font-family: var(--font-latin);
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(18, 107, 80, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(18, 107, 80, 0.35);
+}
+
+/* Infinite Logo Marquee Animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+

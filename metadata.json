@@ -1,0 +1,6 @@
+{
+  "name": "PanzQur'an Digital",
+  "description": "Aplikasi Al-Qur'an Digital modern, elegan, dan fungsional didukung oleh BBPVP Bekasi, Embi Tech Computindo, dan Yayasan Karya Pondok Mandiri.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

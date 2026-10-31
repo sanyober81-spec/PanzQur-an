@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" width="100%" height="100%">
+  <g fill="#373C99">
+    <!-- Kemnaker / BBPVP Geometric Woven Emblem -->
+    <g transform="translate(90, 90)">
+      <!-- Outer Satellite Dots -->
+      <circle cx="-55" cy="0" r="14" />
+      <circle cx="55" cy="0" r="14" />
+      <circle cx="0" cy="-55" r="14" />
+      <circle cx="0" cy="55" r="14" />
+
+      <!-- Corner Accent Dots -->
+      <circle cx="-38" cy="-38" r="12" />
+      <circle cx="38" cy="-38" r="12" />
+      <circle cx="-38" cy="38" r="12" />
+      <circle cx="38" cy="38" r="12" />
+
+      <!-- Interlocking Diagonal Woven Rounded Bars (45 deg) -->
+      <g transform="rotate(45)">
+        <!-- Bar 1 -->
+        <rect x="-13" y="-52" width="26" height="52" rx="13" />
+        <!-- Bar 2 -->
+        <rect x="-13" y="0" width="26" height="52" rx="13" />
+        <!-- Bar 3 -->
+        <rect x="-52" y="-13" width="52" height="26" rx="13" />
+        <!-- Bar 4 -->
+        <rect x="0" y="-13" width="52" height="26" rx="13" />
+
+        <!-- Intersecting Overlap Bars -->
+        <rect x="-35" y="-35" width="26" height="36" rx="13" />
+        <rect x="9" y="-35" width="26" height="36" rx="13" />
+        <rect x="-35" y="9" width="26" height="36" rx="13" />
+        <rect x="9" y="9" width="26" height="36" rx="13" />
+      </g>
+    </g>
+
+    <!-- Vertical Divider -->
+    <rect x="195" y="15" width="9" height="150" rx="4.5" />
+
+    <!-- Text: BBPVP BEKASI -->
+    <text x="230" y="88" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="64" letter-spacing="-0.5px">BBPVP</text>
+    <text x="230" y="154" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="64" letter-spacing="-0.5px">BEKASI</text>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="100%" height="100%">
+  <defs>
+    <!-- Cyan to Teal Gradient -->
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2A6" />
+      <stop offset="100%" stop-color="#008EA0" />
+    </linearGradient>
+
+    <!-- Royal Blue Gradient -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E6DF5" />
+      <stop offset="100%" stop-color="#1243B5" />
+    </linearGradient>
+
+    <!-- Magenta to Orange/Red Gradient -->
+    <linearGradient id="magentaOrangeGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#E5007D" />
+      <stop offset="50%" stop-color="#FF3A30" />
+      <stop offset="100%" stop-color="#FF7A00" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(10, 0)">
+    <!-- Top Left Figure (Teal) -->
+    <circle cx="120" cy="70" r="28" fill="url(#tealGrad)" />
+    <!-- Top Left Ribbon Body -->
+    <path d="M 68 140 C 60 210, 100 270, 160 270 C 130 250, 100 220, 100 170 C 100 120, 160 100, 240 160 C 200 120, 140 100, 68 140 Z" fill="url(#tealGrad)" opacity="0.95" />
+
+    <!-- Top Right Figure (Blue) -->
+    <circle cx="285" cy="65" r="28" fill="url(#blueGrad)" />
+    <!-- Top Right Ribbon Body -->
+    <path d="M 330 145 C 340 195, 315 240, 275 260 C 300 220, 310 180, 290 140 C 275 110, 235 95, 200 120 C 240 100, 290 105, 330 145 Z" fill="url(#blueGrad)" opacity="0.9" />
+
+    <!-- Center/Lower Right Figure (Orange/Magenta) -->
+    <circle cx="265" cy="140" r="26" fill="#FF7A00" />
+    <!-- Lower Ribbon Dynamic Wave forming Heart/Embrace -->
+    <path d="M 85 205 C 105 275, 175 285, 230 255 C 275 230, 305 180, 310 170 C 315 195, 295 245, 250 270 C 180 310, 100 280, 75 215 C 72 205, 78 198, 85 205 Z" fill="url(#magentaOrangeGrad)" />
+    <path d="M 230 255 C 270 235, 300 190, 310 165 C 315 190, 290 235, 240 260 Z" fill="#E5007D" />
+
+    <!-- Brand Typography -->
+    <!-- Line 1: EMBI TECH -->
+    <text x="200" y="345" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="900" font-size="44" fill="#0A0F1D" letter-spacing="-0.5px">EMBI TECH</text>
+
+    <!-- Line 2: COMPUTINDO -->
+    <text x="200" y="380" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="700" font-size="16" fill="#475569" letter-spacing="9px">COMPUTINDO</text>
+  </g>
+</svg>
